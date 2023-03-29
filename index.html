@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon"
+    href="https://static-cdn.jtvnw.net/jtv_user_pictures/6f424ca8-2f68-43c6-b021-a3134ace9225-profile_image-70x70.png"
+    type="image/png" sizes="16x16" id="favIcon">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="estilo.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="card-animation flip-card" id="card">
+    <div class="card flip-card-inner" id="inner">
+      <div class="card-face card-front " id="card-front">
+        <div class="card-brand"><img id="card-brand"></div>
+        <div class="card-issuerName"><span id="card-issuerName">Bank Card</span><span id="card-Type"></span></div>
+        <div class="card-number"><span id="card-number">1234 5678 9012 3456</span></div>
+        <div class="card-name"><span id="card-name">John Doe</span></div>
+        <div class="card-expiration"><span id="card-expiry">MM/AA</span></div>
+      </div>
+      <div class="card-face card-back flip-card-back" id = "card-back">
+        <div class="card-cvv" id = "cvv-div"><span id="card-cvv">123</span></div>
+        <div class="card-stripe"></div>
+        <div class="card-client-signature"></div>
+      </div>
+    </div>
+  </div>
+  <form>
+    <label for="cardNumber">Card Number</label>
+    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required oninput="updateCardNumber(this)">
+    <label for="cardName">Card Name</label>
+    <input type="text" id="cardName" name="cardName" placeholder="John Doe" required oninput="updateCardName(this)">
+    <label for="cardExpiration">Expiration Date</label>
+    <input type="month" min="2022-04" id="cardExpiration" name="cardExpiration" placeholder="MM/YY" required  oninput="updateCardExpiry(this)">
+    <label for="cardCVV">CVV</label>
+    <input type="number" min="0" max="100" id="cardCVV" name="cardCVV" placeholder="123" required oninput="updateCardCVV(this)">
+    <button type="submit" id = "pago">Pagar</button>
+</script>
+
+
+  </form>
+
+</body>
+
+</html>
