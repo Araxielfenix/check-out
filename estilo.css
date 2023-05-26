@@ -1,23 +1,23 @@
 @media (prefers-color-scheme: dark) {
-  /* html {
+	/* html {
     background-color: #000000;
     background-image: radial-gradient(#1f1f1f 0.9px, #000000 0.9px);
     background-size: 18px 18px;
   } */
-  html {
-    background-image: url("https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-  .card-front,
-  .card-back {
-    background: rgba(255, 255, 255, 0.19);
-  }
+	html {
+		background-image: url("https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+	.card-front,
+	.card-back {
+		background: rgba(255, 255, 255, 0.19);
+	}
 }
 @media (prefers-color-scheme: light) {
-  /* html {
+	/* html {
     background-color: #f8f8ff;
     background-image: radial-gradient(
       #1f1f1f 0.8500000000000001px,
@@ -26,339 +26,344 @@
     background-size: 17px 17px;
     color: #000000;
   } */
-  /* Set url as background image: https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
-  html {
-    background-image: url("https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-  }
-  .card-front,
-  .card-back {
-    background-color: #51789b38;
-  }
+	/* Set url as background image: https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
+	html {
+		background-image: url("https://images.pexels.com/photos/7135075/pexels-photo-7135075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+	}
+	.card-front,
+	.card-back {
+		background-color: #51789b38;
+	}
 }
 
 /* Media query for mobile to adjust the size for the inputs. */
-@media (min-width:480px) {
-  .card {
-    width: 300px;
-  }
-  .card-number {
-    width: 100%;
-  }
-  .card-expiration {
-    width: 100%;
-  }
-  .card-name {
-    width: 100%;
-  }
-  .card-cvv {
-    width: 100%;
-  }
-  form{
-    width: 40%;
-  }
+@media (min-width: 480px) {
+	.card {
+		width: 300px;
+	}
+	.card-number {
+		width: 100%;
+	}
+	.card-expiration {
+		width: 100%;
+	}
+	.card-name {
+		width: 100%;
+	}
+	.card-cvv {
+		width: 100%;
+	}
+	form {
+		width: 40%;
+	}
 }
-@media (min-width:1281px){
-  form{
-    width: 16vw;
-  }
+@media (min-width: 1281px) {
+	form {
+		width: 16vw;
+	}
 }
 .credit-card-section,
 .billing-shipping-section {
-  width: 50%;
-  margin: 0 auto;
+	width: 50%;
+	margin: 0 auto;
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .form-group {
-  width: 45%;
-  margin-bottom: 20px;
+	width: 45%;
+	margin-bottom: 20px;
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
 }
 
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 .card-animation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .card {
-  position: relative;
-  width: 360px;
-  height: 220px;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  perspective: 1000px;
+	position: relative;
+	width: 360px;
+	height: 220px;
+	transform-style: preserve-3d;
+	transition: transform 1s;
+	perspective: 1000px;
 }
 
 .card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
 
 .card-face {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  box-sizing: border-box;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	box-sizing: border-box;
+	border-radius: 10px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-front {
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+	padding: 20px;
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .card-back {
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+	padding: 20px;
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 img {
-  width: 70px;
+	width: 70px;
 }
 
 .card-issuerName {
-  color: white;
+	color: white;
 }
 
 .card-brand {
-  width: 70px;
-  height: 40px;
-  background-color: #ccc;
-  border-radius: 5px;
+	width: 70px;
+	height: 40px;
+	background-color: #ccc;
+	border-radius: 5px;
 }
 
 .card-number {
-  width: 100%;
-  height: 25px;
-  margin-bottom: 20px;
-  background-color: #ccc;
-  border-radius: 5px;
+	width: 100%;
+	height: 25px;
+	margin-bottom: 20px;
+	background-color: #ccc;
+	border-radius: 5px;
 }
 
 .card-expiration {
-  width: 40%;
-  height: 25px;
-  background-color: #ccc;
-  border-radius: 5px;
-  display: inline-block;
+	width: 40%;
+	height: 25px;
+	background-color: #ccc;
+	border-radius: 5px;
+	display: inline-block;
 }
 
 .card-name {
-  height: 25px;
-  background-color: #ccc;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  display: inline-block;
+	height: 25px;
+	background-color: #ccc;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	display: inline-block;
 }
 .card-cvv {
-  width: 80px;
-  height: 20px;
-  background-color: #ccc;
-  position: relative;
-  margin: 5.6em 0.1em;
-  z-index: 1;
+	width: 80px;
+	height: 20px;
+	background-color: #ccc;
+	position: relative;
+	margin: 5.6em 0.1em;
+	z-index: 1;
 }
 
 .card-cvv:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #444;
-  transform: translateZ(-1px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #444;
+	transform: translateZ(-1px);
 }
 
 .card-stripe {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  margin: -5.7em auto;
-  background-color: #585858;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	margin: -5.7em auto;
+	background-color: #585858;
 }
 
 .card-stripe:before,
 .card-stripe:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background-color: #585858;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-color: #585858;
 }
 
 .card-stripe:before {
-  top: -20px;
-  left: 0;
-  margin: 1.9em auto;
+	top: -20px;
+	left: 0;
+	margin: 1.9em auto;
 }
 
 .card-stripe:after {
-  bottom: -20px;
-  right: 0;
+	bottom: -20px;
+	right: 0;
 }
 
 .card-client-signature {
-  position: absolute;
-  top: 50%;
-  width: 80%;
-  height: 10px;
-  background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	width: 80%;
+	height: 10px;
+	background-color: #ccc;
 }
 
 .card-client-signature:before,
 .card-client-signature:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10px;
-  background-color: #ccc;
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	background-color: #ccc;
 }
 
 .card-client-signature:before {
-  top: -20px;
-  left: 0;
-  margin: 1.9em auto;
+	top: -20px;
+	left: 0;
+	margin: 1.9em auto;
 }
 
 .card-client-signature:after {
-  bottom: -20px;
-  right: 0;
+	bottom: -20px;
+	right: 0;
 }
 
 form {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 label {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 10px;
+	color: white;
+	font-size: 16px;
+	margin-bottom: 10px;
 }
 
 input {
-  width: 100%;
-  height: 25px;
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 5px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-  background-color: #eee;
+	width: 100%;
+	height: 25px;
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	background-color: #eee;
 }
 
 button[type="submit"] {
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  padding: 10px 20px;
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.19);
-  border-color: white;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+	border: 1px solid rgba(255, 255, 255, 0.26);
+	padding: 10px 20px;
+	font-size: 16px;
+	background: rgba(255, 255, 255, 0.19);
+	border-color: white;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
+	border: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 button[type="submit"]:hover {
-  background: rgba(rgb(43, 43, 43)255, 255, 0.19);
+	background: rgba(rgb(43, 43, 43) 255, 255, 0.19);
 }
 
 .card-number,
 .card-expiration,
 .card-name,
 .card-brand {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
 }
 
 .flip-card {
-  background-color: transparent;
-  perspective: 1000px;
-  margin: 6vh auto;
+	background-color: transparent;
+	perspective: 1000px;
+	margin: 6vh auto;
 }
 
 .flip-card-inner {
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  backface-visibility: hidden;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	backface-visibility: hidden;
 }
 
 .flipped {
-  transform: rotateY(180deg);
+	transform: rotateY(180deg);
 }
 
 .unFlip {
-  transform: rotateY(90deg);
+	transform: rotateY(90deg);
 }
 
 .flip-card-front,
 .flip-card-back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
+	background-color: #bbb;
+	color: black;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
 }
 
 .flip-card-back {
-  color: rgb(0, 0, 0);
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
+	color: rgb(0, 0, 0);
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	transform-style: preserve-3d;
+}
+
+#pago:hover {
+	box-shadow: 0 4px 30px rgb(102 0 249 / 74%);
+	background: rgb(169 0 255 / 45%);
 }
