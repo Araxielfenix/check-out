@@ -21,28 +21,29 @@
         <div class="card-name"><span id="card-name">John Doe</span></div>
         <div class="card-expiration"><span id="card-expiry">MM/AA</span></div>
       </div>
-      <div class="card-face card-back flip-card-back" id = "card-back">
-        <div class="card-cvv" id = "cvv-div"><span id="card-cvv">123</span></div>
+      <div class="card-face card-back flip-card-back" id="card-back">
+        <div class="card-cvv" id="cvv-div"><span id="card-cvv">123</span></div>
         <div class="card-stripe"></div>
         <div class="card-client-signature"></div>
       </div>
     </div>
   </div>
+
   <form>
     <label for="cardNumber">Card Number</label>
-    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required oninput="updateCardNumber(this)">
+    <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required
+      oninput="updateCardNumber(this)">
     <label for="cardName">Card Name</label>
     <input type="text" id="cardName" name="cardName" placeholder="John Doe" required oninput="updateCardName(this)">
     <label for="cardExpiration">Expiration Date</label>
-    <input type="month" min="2022-04" id="cardExpiration" name="cardExpiration" placeholder="MM/YY" required  oninput="updateCardExpiry(this)">
+    <input type="month" min="2022-04" id="cardExpiration" name="cardExpiration" placeholder="MM/YY" required
+      oninput="updateCardExpiry(this)">
     <label for="cardCVV">CVV</label>
-    <input type="number" min="0" max="100" id="cardCVV" name="cardCVV" placeholder="123" required oninput="updateCardCVV(this)">
-    <button type="submit" id = "pago">Pagar</button>
-</script>
-
-
+    <input type="number" min="0" max="100" id="cardCVV" name="cardCVV" placeholder="123" required
+      oninput="updateCardCVV(this)">
   </form>
 
+  <button type="submit" id="pago">Pagar</button>
 </body>
 
 </html>
